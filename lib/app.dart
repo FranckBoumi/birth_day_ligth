@@ -23,26 +23,31 @@ class _AppState extends State<App> {
       //futureDesign(),
       //futureDesignMostView(),
         Padding(
-          padding: const EdgeInsets.only(top: 130.0,left: 12.0),
+          padding: const EdgeInsets.only(top: 10.0,left: 20.0),
           child: Column(
             children: <Widget>[
               Row(
                   children: <Widget>[
-                        /*IconButton(icon: Icon(Icons.cake,color: Colors.pink,size: 50),
-                              color: Colors.pink,
-                              onPressed: null),
-                        Text(" My BDL ",style: TextStyle(color: Colors.pink),),*/
-                        RaisedButton.icon(
+                        SizedBox(
+                            height: 170,
+                            width: 150, // specific value
+                            child: RaisedButton.icon(
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10.0)),
+                                onPressed: () {},
+                                icon: Icon(Icons.cake,size: 60),
+                                color: Colors.pink,
+                                label: Text("My BDL"))
+                        ),
+                       /* RaisedButton.icon(
                             onPressed: (){
 
                             },
                             icon: Icon(Icons.cake,size: 80,),
                             color: Colors.pink,
                             label: Text("My BDL"),
-
-
-                        ),
-                        Padding(
+                        ),*/
+                        /*Padding(
                           padding: const EdgeInsets.all(10.0),
                           child: RaisedButton.icon(
                               onPressed: (){
@@ -52,38 +57,47 @@ class _AppState extends State<App> {
                               color: Colors.pink,
                               label: Text("FixMsg")
                           ),
-                        ),
-                         /* IconButton(icon: Icon(Icons.message,color: Colors.pink,size: 50,),
-                                onPressed: (){
+                        ),*/
+                          Padding(
+                            padding: const EdgeInsets.all(20.0),
+                            child: SizedBox(
+                                height: 170,
+                                width: 150, // specific value
+                                child: RaisedButton.icon(
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(10.0)),
+                                    onPressed: () {},
+                                    icon: Icon(Icons.message,size: 60),
+                                    color: Colors.pink,
+                                    label: Text("FixMsg"))
+                            ),
+                          ),
 
-                                }
-                                ),
-                          Text("Fix Message",style: TextStyle(color: Colors.pink),)*/
                   ],
                 ),
               Row(
                 children: <Widget>[
-                        RaisedButton.icon(
+                        /*RaisedButton.icon(
                             onPressed: (){
 
                             },
                             icon: Icon(Icons.library_music,size: 80),
                             color: Colors.pink,
                             label: Text("Melody")
-                        ),
-                      /*IconButton(icon: Icon(Icons.library_music,color: Colors.pink,size: 50,),
-                            onPressed: (){
+                        ),*/
+                          SizedBox(
+                              height: 170,
+                              width: 150, // specific value
+                              child: RaisedButton.icon(
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(10.0)),
+                                  onPressed: () {},
+                                  icon: Icon(Icons.library_music,size: 60),
+                                  color: Colors.pink,
+                                  label: Text("Melody"))
+                          ),
 
-                            }
-                        ),
-                       Text("Melody",style: TextStyle(color: Colors.pink)),*/
-                      /*IconButton(icon: Icon(Icons.music_note,color: Colors.pink,size: 50,),
-                            onPressed: (){
-
-                            }
-                        ),
-                      Text("Lyric",style: TextStyle(color: Colors.pink),)*/
-                        Padding(
+                        /*Padding(
                           padding: const EdgeInsets.all(10.0),
                           child: RaisedButton.icon(
                               onPressed: (){
@@ -93,7 +107,21 @@ class _AppState extends State<App> {
                               color: Colors.pink,
                               label: Text("Lyrics   ")
                           ),
-                        )
+                        )*/
+                          Padding(
+                            padding: const EdgeInsets.all(20.0),
+                            child: SizedBox(
+                                height: 170,
+                                width: 150, // specific value
+                                child: RaisedButton.icon(
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(10.0)),
+                                    onPressed: () {},
+                                    icon: Icon(Icons.music_note,size: 60),
+                                    color: Colors.pink,
+                                    label: Text("Lyrics   "))
+                            ),
+                          ),
                 ],
               )
             ],
